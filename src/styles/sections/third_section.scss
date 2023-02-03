@@ -1,0 +1,22 @@
+.third__section {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+
+  & > h2 {
+    margin-bottom: 42px;
+  }
+
+  & > img {
+    width: 100%;
+    margin-bottom: 117px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .third__section {
+    & > img {
+      margin-bottom: 50px;
+    }
+  }
+}

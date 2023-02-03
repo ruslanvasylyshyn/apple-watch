@@ -1,0 +1,21 @@
+@forward '../utils/vars';
+
+.second__section {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+
+  & > h2 {
+    margin-bottom: 142px;
+  }
+
+  & > div {
+    width: 100%;
+    background-color: $c-grey;
+    margin-bottom: 183px;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@forward '../utils/vars';
+
+.section-title {
+  color: $c-black;
+  font-size: 71px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.header__section {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 73px;
+
+  &-logo {
+    margin-top: 113px;
+    margin-bottom: 75px;
+    width: 268px;
+    height: auto;
+  }
+
+  &-main-Img {
+    width: $width-for-mobile;
+    height: auto;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-title {
+    font-size: 51px;
+    width: $width-for-mobile;
+  }
+
+  .header__section {
+    padding: 0;
+    &-main-Img {
+      width: $width-for-mobile;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section-title {
+    font-size: 41px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-title {
+    font-size: 31px;
+  }
+}

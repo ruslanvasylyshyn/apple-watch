@@ -1,0 +1,11 @@
+$c-white: #fff;
+$c-black: #000;
+$c-grey: #f7f7f7;
+$c-green: #00a900;
+$c-black-light: #131313;
+$width-for-mobile: calc(100% - 30px);
+
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('../fonts/SF-PRO-DISPLAY-REGULAR.OTF') format('otf');
+}

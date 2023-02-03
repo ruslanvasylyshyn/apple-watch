@@ -1,0 +1,17 @@
+@import 'utils';
+@import 'reset';
+@import './sections/header';
+@import './sections/second_section';
+@import './sections/third_section';
+@import './sections/fourth_section';
+@import './sections/fifth_section';
+@import './sections/footer';
+
+html {
+  font-family: 'SFProDisplay', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $c-white;
+}

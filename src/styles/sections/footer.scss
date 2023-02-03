@@ -1,0 +1,129 @@
+@forward '../utils/vars';
+
+.footer {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    'first second'
+    'first third';
+
+  & > div {
+    background-color: $c-grey;
+    border: 8px solid $c-white;
+  }
+
+  &_sub-section-1 {
+    grid-area: first;
+    text-align: center;
+
+    & > h2 {
+      margin-top: 200px;
+      margin-bottom: 200px;
+    }
+
+    & > img {
+      margin-bottom: 215px;
+    }
+  }
+  &_sub-section-2 {
+    grid-area: second;
+    text-align: center;
+
+    & > h3 {
+      margin-top: 70px;
+      margin-bottom: 130px;
+      font-size: 35px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: center;
+    }
+
+    & > img {
+      width: 100%;
+      margin-bottom: 130px;
+    }
+  }
+  &_sub-section-3 {
+    grid-area: third;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+    & > h3 {
+      width: 80%;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      font-size: 35px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 30% 30%;
+    grid-template-areas:
+      'first'
+      'second'
+      'third';
+
+    &_sub-section-1 {
+      & > h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+
+    &_sub-section-2 {
+      & > h3 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      & > img {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    &_sub-section-1 > img {
+      width: $width-for-mobile;
+      margin-bottom: 0;
+    }
+
+    &_sub-section-3 {
+      position: relative;
+
+      & > h3 {
+        width: $width-for-mobile;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: absolute;
+
+        & br {
+          display: none;
+        }
+      }
+    }
+
+    &_sub-section-3 > img {
+      width: 70%;
+    }
+  }
+}
